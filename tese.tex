@@ -72,6 +72,13 @@
 % \usepackage[pdftex]{hyperref}
 % \hypersetup{colorlinks, citecolor=black, pdftex}
 
+\newcommand{\meunome}{CHRISTOPHER RIC COELHO SAAR}
+\newcommand{\meutitulo}{EXPLORAÇÃO DE ESTADOS IMPLÍCITOS EM REQUISITOS DE SOFTWARE COMO ESTRATÉGIA PEDAGÓGICA NO ENSINO DE ENGENHARIA DE REQUISITOS E TESTES}
+\newcommand{\meuorientador}{Prof. Dr. Daricélio Moreira Soares}
+\newcommand{\meuano}{2026}
+\newcommand{\meumes}{<MES>}
+\newcommand{\meudia}{<DIA>}
+
 \begin{document}
     % --- Para elementos em português, remover.
     \renewcommand{\listfigurename}{Lista de Figuras}
@@ -99,11 +106,11 @@
 	  \begin{singlespace}
 	    \begin{center}
 	      {\large UNIVERSIDADE FEDERAL DO ACRE}
-	      \vskip4.0cm{\textbf{\Large MARLON DA SILVA ROGÉRIO}}
-	      \vskip5.0cm {\textbf{MODELO ODD LOG-LOGÍSTICA SKEW T-STUDENT: UMA APLICAÇÃO EM DADOS COM MEDIDA REPETIDA NO TEMPO}}
+	      \vskip4.0cm{\textbf{\Large \meunome}}
+	      \vskip5.0cm {\textbf{\meutitulo}}
 	    \end{center}
 	    \begin{center}
-	      \vskip10.0cm{\textbf{RIO BRANCO\\2023}}
+	      \vskip10.0cm{\textbf{RIO BRANCO\\\meuano}}
 	    \end{center}
 	  \end{singlespace}
 	% --- -----------------------------------------------------------------
@@ -114,12 +121,12 @@
 	
 	\vspace{-60mm}
 	  \begin{center}
-	    {\large FEDERAL UNIVERSITY OF ACRE}\\
+	    {\large UNIVERSIDADE FEDERAL DO ACRE}\\
 	    \vspace{3cm}
-	    {\large MARLON DA SILVA ROGÉRIO} \\
+	    {\large \meunome} \\
 	    \vspace{3cm}
 	    
-	    {\large MODELO ODD LOG-LOGÍSTICA SKEW T-STUDENT: UMA APLICAÇÃO EM DADOS COM MEDIDA REPETIDA NO TEMPO} \\
+	    {\large \meutitulo} \\
 	    \vspace{1.5cm}
 	  \end{center}
 	
@@ -133,13 +140,13 @@
 	\vskip1.50cm
 	  \begin{center}
 	    \small Orientador: \\
-	    Prof. Dr. {Altemir da Silva Braga}\vskip3.5cm 
+	    \meuorientador\vskip3.5cm 
 	  \end{center}
 	  \begin{center}
 	    \vspace{4mm}
 	    RIO BRANCO \\
 	    %\vspace{6mm}
-	    2023
+	    \meuano
 	  \end{center}
 	
 	\thispagestyle{empty}
@@ -152,10 +159,10 @@
 	\vspace{-60mm}
 	
 	\begin{center}
-	  {\large MARLON DA SILVA ROGÉRIO} \\
+	  {\large \meunome} \\
 	  \vspace{7mm}
 	
-	  {\large MODELO ODD LOG-LOGÍSTICA SKEW T-STUDENT: UMA APLICAÇÃO EM DADOS COM MEDIDA REPETIDA NO TEMPO} \\
+	  {\large \meutitulo} \\
 	  \vspace{10mm}
 	\end{center}
 	
@@ -171,14 +178,14 @@
 	\vspace{1.0 cm}
 	\noindent
 	
-	Approved in <MONTH> of <YEAR>. \\
+	Aprovado em \meudia\ de \meumes\ de \meuano. \\
 	\begin{flushright}
 	  \parbox{11cm}
 	  {
 	    \begin{center}
 	      \vspace{6mm}
 	      \rule{11cm}{.1mm} \\
-	      Prof. Dr. Altemir da Silva Braga\\
+	      \meuorientador\\
 	      Universidade Federal do Acre
 	      \vspace{6mm}
 	    \end{center}
@@ -189,7 +196,7 @@
 	  \vspace{4mm}
 	  RIO BRANCO \\
 	  %\vspace{6mm}
-	  2023
+	  \meuano
 	\end{center}
 	
 	% --- -----------------------------------------------------------------
@@ -216,13 +223,7 @@
 	\pretextualchapter{Agradecimentos}
 	\hspace{5mm}
 	
-	À gloria do Grande Arquiteto do Universo e a Ele são destinados os primeiros agradecimentos para este trabalho. 
-	
-	Agradeço também a minha família: minha esposa querida, \textbf{Caroline Sá}, meus pais \textbf{Edmar Rogério} e \textbf{Joice Vieira}, e minhas irmãs \textbf{Caroline Rogério} e \textbf{Karine Rogério}. Cada passo desta caminhada teve a participação de vocês e por isso serei eternamente grato.
-	
-	Ao corpo docente do Programa de Pós-Graduação em Ciências da Computação da UFAC pelo enriquecimento intelectual proporcionado em especial ao \textbf{Prof. Dr. Altemir da Silva Braga} pela extrema paciência, resiliência e dedicação para ensinar um mundo novo de conhecimentos.
-	
-	Finalmente, à Universidade Federal do Acre pela iniciativa do programa possibilitando o aperfeiçoamento acadêmico para área de tecnologia dentro do estado.
+	A mim e aos meus.
 	
 	% --- -----------------------------------------------------------------
 	% --- Resumo em portugues.(Obrigatorio)
@@ -230,24 +231,25 @@
 	\begin{resumo}
 	
 	  \begin{center}{
-	    \textbf{ANÁLISE DO MODELO ODD LOG-LOGISTIC SKEW T-STUDENT PARA DADOS DE MEDIDA REPETIDA NO TEMPO}}
+	    \textbf{\meutitulo}}
 	  \end{center}
 	
-	\begin{spacing}{1.0}
-	  \noindent Proposto em 2021 por \cite{adolf2021}, o modelo Odd Log-Logistic Skew $t$-Student (OLLST) apresentou uma proposta de regressão semi-paramétrica com a possibilidade de ajuste para diferentes tipos de distribuição. Considerando que o modelo ainda não havia sido testado para dados com medida repetida no tempo, este estudo conduziu alguns testes de modelagem para seis conjuntos de dados diferentes \cite{gabriel2022}, onde a variável resposta foi analisada em função do tempo. Os resultados preliminares mostraram o bom desempenho do OLLST para alguns conjuntos de dados, quando comparado ao modelo Normal (NO), em outros uma relação de semelhança nas comparações e para alguns sua performance foi ligeiramente inferior. Os testes revelaram ainda uma saída de dados poluída para os resultados obtidos pela função \texttt{gamlss} da linguagem $\mathcal{R}$, com pouca intuitividade e propensão maior a erros. Como resultado uma ferramenta foi desenvolvida com objetivo de refinar a saída e automatizar a rotina de comparação dos indivíduos em função do tempo.
+	\begin{spacing}{1.0}\noindent
+
+        resumo
+    
 	\end{spacing}
-	{\hspace{-8mm} \bf{Palavras-chave}}: Regressão; GAMLSS; OLLST; Medida repetida no tempo.
+	{\hspace{-8mm} \bf{Palavras-chave}}: Engenharia de Software.
 	
 	\end{resumo}
 	
 	% --- -----------------------------------------------------------------
 	% --- Resumo em lingua estrangeira.(Obrigatorio)
 	% --- ----------------------------------------------------------------
-	\begin{abstract}
+	\begin{abstract}\noindent 
+        abstract
 	
-	\noindent Proposed in 2021 by \cite{adolf2021}, the Odd Log-Logistic Skew $t$-Student (OLLST) model presented a semi-parametric regression proposal with the possibility of adjustment for different types of distribution. Considering that the model had not yet been tested for data with repeated measures over time, this study conducted some modeling tests for six different data sets \cite{gabriel2022}, where the response variable was observed as a function of time. The preliminary results appreciated the good performance of the OLLST for some sets of data, when compared to the Normal model (NO), in others a relation of similarity in the comparisons and for some its performance was inferior. The tests also revealed a polluted data output for the results obtained by the \texttt{gamlss} function of the $\mathcal{R}$ language, with little intuitiveness and a greater tendency to errors. As a result, a tool was developed with the aim of refining the output and automating the routine of comparing individuals over time.
-	
-	{\hspace{-8mm} \bf{Keywords}}: Regression; GAMLSS; OLLST; Repeated measure in time
+	{\hspace{-8mm} \bf{Keywords}}: Software Engineering
 	
 	\end{abstract}
 	
@@ -299,7 +301,7 @@
 Em alguns casos, estas relações podem apresentar um esquema estrutural em que a disposição dos dados exigem uma relação de subordinação entre variáveis \cite{natis2001modelos}. Em grande parte dos estudos com essa característica a variável "tempo" é o fator de associação mais comum, de modo que no modelo hierárquico sua relação pode ser descrita genericamente por  $\mathbf{y}_{i}=(y_{i1},\cdots,y_{im_{i}})$, sendo $y_{ik}$ a resposta para o $i$-ésimo indivíduo no $k$-ésimo tempo, $k=(1,\cdots,m_{i})$ \cite{singer2000analysis}.
  
 
-%Ainda no contexto da regressão, é comum que pesquisadores se deparem com diferentes estrutura de dados, por exemplo, os hierárquicos, onde os dados são dispostos em unidades experimentais agrupadas e subordinadas a outros grupos \cite{natis2001modelos}. Por exemplo, supondo que se tenha o interesse em investigar as características que os locais de trabalho influenciam na produtividade dos funcionários, a estruturação dos dado segue de forma hierárquica na medida em que o grupo de funcionários é subordinado o grupo de empresa \cite{natis2001modelos}.   
+ 
 
 A aplicação prática desse conceito pode ser encontrada, por exemplo, ao se perceber a variação de melhora ou piora em um paciente quando submetido a um tratamento ao longo do tempo, ou ainda, quando uma região de solo é submetido a controles que influenciam nos níveis de seus nutrientes para diferentes observações no tempo. Em ambos os casos, o delineamento do modelo deve considerar as variáveis dependentes para cada tempo e assim concluir sobre a eficácia dos controles aplicados.
 
@@ -418,19 +420,19 @@ Outro modo interpretar o comportamento primário de medida repetida no tempo se 
 
  %Essa influência do tempo sobre as variáveis respostas pode ser melhor compreendida ao se plotar um gráfico de perfis das unidades amostrais em função do tempo, como mostra a figura \ref{fig1graficoPerfis}.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\linewidth]{perfil_individual_medio_tratamento_separado}
-	\caption{Gráfico de perfis com perfil individual médio por individuo}
-	\label{fig1graficoPerfis1}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.8\linewidth]{perfil_individual_medio_tratamento_separado}
+% 	\caption{Gráfico de perfis com perfil individual médio por individuo}
+% 	\label{fig1graficoPerfis1}
+% \end{figure}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.5\linewidth]{perfil_individual_medio_tratamento}
-  \caption{Gráfico de perfis com perfil individual médio em conjunto}
-  \label{fig1graficoPerfis}
-\end{figure}
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=0.5\linewidth]{perfil_individual_medio_tratamento}
+%   \caption{Gráfico de perfis com perfil individual médio em conjunto}
+%   \label{fig1graficoPerfis}
+% \end{figure}
 
 Entre os modelos dispostos na literatura os mais difundidos no delineamento de dados longitudinais trabalham com a pressuposição de normalidade da variável resposta ou dos erros \cite{singer2000analysis}. Este é o caso, por exemplo, dos modelos lineares misto (ou modelo de efeito aleatório), que apesar da amplitude na modelagem ao incorporar o efeito aleatório, apresentam limitações no campo da distribuição. 
 
@@ -447,19 +449,19 @@ Por outro lado, a distribuição dos dados pode impactar diretamente na eficiên
 
 A figura \ref{fig22histno}, por exemplo, apresenta um histograma para determinado conjunto de dados cuja a distribuição não é normal, ao passo que a \ref{fig23histno} mostra um conjunto com distribuição esperado pelos modelos lineares. Em ambos os casos, a linha vermelha sob o gráfico mostra a função de densidade e probabilidade (fdp) da normal, mostrando as limitações do modelo quando se percebe de dissonâncias na distribuição. 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\linewidth]{hist_no_a1}
-	\caption{Histograma para dados sem distribuição normal.}
-	\label{fig22histno}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.6\linewidth]{hist_no_a1}
+% 	\caption{Histograma para dados sem distribuição normal.}
+% 	\label{fig22histno}
+% \end{figure} 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\linewidth]{hist_no_a2}
-	\caption{Histograma para dados com distribuição normal.}
-	\label{fig23histno}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.6\linewidth]{hist_no_a2}
+% 	\caption{Histograma para dados com distribuição normal.}
+% 	\label{fig23histno}
+% \end{figure} 
 
 Grande parte dos estudos com medida repetida no tempo enfrentam as limitações da modelagem do modelo linear transformando a variável resposta para tentar retornar ao modelo linear-normal, quando não, acabam utilizando um componente sistemático não-linear nos parâmetros e uma distribuição assimétrica para o componente estocástico. Em ambos os casos, o pesquisador pode se deparar com outras distribuições assimétricas ou mesmo bimodais para o erro, que não sejam possíveis de retornar para o modelo linear \cite{colosimo2006analise}, exigindo modelos mais flexíveis para o ajuste. 
 
@@ -670,15 +672,15 @@ A flexibilidade deste novo modelo reside na restrição dos parâmetros $\alpha$
 
 De maneira visual, a figura \ref{fig7differentGraphs} apresenta a variação do comportamento da função de densidade OLLST na medida que os parâmetros mudam seu valor. Em ambas as imagens, os valores para $\mu$ e $\sigma$ foram fixados em $0$ e $1$, respectivamente. Enquanto na figura \ref{fig7differentGraphs}(a) $\lambda = 2$ e $\nu=13$, com variação no valor de $\alpha$, conforme a legenda, na figura \ref{fig7differentGraphs}(b) $\alpha$ foi fixado em $0,2$ e $\nu=13$ variando somente o valor para $\lambda$.
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(a)\hspace{5cm} (b)\\
-		\includegraphics[width=7cm,height=4.7cm]{fig12}
-		~~\includegraphics[width=7cm,height=4.7cm]{fig13}\\
-		\caption{Variação da densidade do OLLST.}
-		\label{fig7differentGraphs}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(a)\hspace{5cm} (b)\\
+% 		\includegraphics[width=7cm,height=4.7cm]{fig12}
+% 		~~\includegraphics[width=7cm,height=4.7cm]{fig13}\\
+% 		\caption{Variação da densidade do OLLST.}
+% 		\label{fig7differentGraphs}
+% 	\end{center}
+% \end{figure}
 
 O modelo foi codificado em $\mathcal{R}$ podendo ser utilizado pela biblioteca \texttt{gamlss} passando o valor "OLLST" como parâmetro de escolha da distribuição \textit{(Veja o apêndice \ref{appendixA})}.
 
@@ -852,12 +854,12 @@ Deve-se considerar, no entanto, que a quadratura de Gauss-Hermite tem maior efet
 
 Por exemplo, ao desenhar a linha para $g(x) = exp(-(x-1)^{2})$ e posicionar os pontos e pesos para esse tipo de integral, é possível visualizar a distribuição dos pontos ao longo da região de interesse, ou seja, dentro do intervalo da função de densidade e probabilidade como mostra a figura \ref{fig21cap2}:
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm,height=5.7cm]{gauss_nao_adap_m1}
-	\caption{(a) - \textit{(Código $\mathcal{R}$ no apêndice \ref{appendixI:gaussNaoadaptativa})}}
-	\label{fig21cap2}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm,height=5.7cm]{gauss_nao_adap_m1}
+% 	\caption{(a) - \textit{(Código $\mathcal{R}$ no apêndice \ref{appendixI:gaussNaoadaptativa})}}
+% 	\label{fig21cap2}
+% \end{figure}
 
 Apesar dos pontos de quadratura não estarem perfeitamente alinhados com a área de maior densidade do gráfico, ainda assim o resultado obtido ao se calcular a integral para função $g(x) = exp(-(x-1)^{2})$ está próxima do valor real para ela, como visto abaixo:
 
@@ -882,21 +884,21 @@ Como a função $g(x)$, que dita o comportamento da curva, não exerce influênc
 
 Em um cenário que $g(x) = exp(-5*(x-3)^{2})$, desenhando uma assimetria na distribuição, os pontos de quadratura ficam totalmente fora da região de interesse da função, como mostra a figura \ref{fig22cap2}.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm,height=5.7cm]{gauss_nao_adap_m2}
-	\caption{(b) - \textit{(Código $\mathcal{R}$ no apêndice \ref{appendixJ:gaussNaoAdaptativa})}}
-	\label{fig22cap2}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm,height=5.7cm]{gauss_nao_adap_m2}
+% 	\caption{(b) - \textit{(Código $\mathcal{R}$ no apêndice \ref{appendixJ:gaussNaoAdaptativa})}}
+% 	\label{fig22cap2}
+% \end{figure}
 
 Em dados bimodais, mesmo que os pontos caiam sobre a região de interesse da função, é importante considerar o comportamento e a região de agrupamento dos dados dessa bimodalidade \ref{fig23cap2}. Em ambos os casos, ou seja, tanto na assimetria quanto na bimodalidade, o valor do cálculo da integral é afetado, produzindo resultados imprecisos.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm,height=5.7cm]{gauss_nao_adap_m3}
-	\caption{(c) - \textit{Código $\mathcal{R}$ no apêndice \ref{appendixK:gauss-hermite}}}
-	\label{fig23cap2}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm,height=5.7cm]{gauss_nao_adap_m3}
+% 	\caption{(c) - \textit{Código $\mathcal{R}$ no apêndice \ref{appendixK:gauss-hermite}}}
+% 	\label{fig23cap2}
+% \end{figure}
 
 \begin{verbatim}
 	> sum(quad$weights * g3(quad$nodes) * exp(quad$nodes^2))
@@ -941,12 +943,12 @@ A função pode ser reescrita de modo que
 	\int_{-\infty }^{+\infty }g(x)dx\approx \sum_{k=1}^{q}\frac{v_{k}}{\sqrt{\pi }}h(\sqrt{2}\hat{\sigma }s_{k}+\hat{\mu })=\sqrt{2\pi \hat{\sigma }}\sum_{k=1}^{q}v_{k}^{\dotplus }g(s_{k}^{\dotplus }),
 \end{equation} de modo que o comportamento dos pontos seguem a distribuição dos dados, como mostra a figura \ref{fig24cap2}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=9cm]{gauss_adaptativa}
-	\caption{Pontos de quadratura sobre dados assimétrico - Gauss-Hermite adaptativa}
-	\label{fig24cap2}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=9cm]{gauss_adaptativa}
+% 	\caption{Pontos de quadratura sobre dados assimétrico - Gauss-Hermite adaptativa}
+% 	\label{fig24cap2}
+% \end{figure}
 
 \section{OLLST com efeitos aleatórios}
 
@@ -1075,87 +1077,87 @@ Vale ressaltar que para seu estudo, \cite{gabriel2022} considerou também a prof
 
 As figuras \ref{fig7differentGraphs1}, \ref{fig7differentGraphs3} e \ref{fig7differentGraphs2} mostram a distribuição da frequência do carbono orgânico analisado por \cite{gabriel2022}. Cada gráfico trás consigo uma linha pontilhada em azul que representa uma média para variável resposta, além de um mancha em vermelho para representar a zona de densidade mostrando a variação nas distribuições para cada conjunto.
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(LV-C)\hspace{5cm} (LV-CN)\\
-		\includegraphics[height=4.7cm]{LV_C_HIST}
-		~~\includegraphics[height=4.7cm]{LV_CN_HIST}\\
-		\caption{Concentração de carbono no solo.}
-		\label{fig7differentGraphs1}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(LV-C)\hspace{5cm} (LV-CN)\\
+% 		\includegraphics[height=4.7cm]{LV_C_HIST}
+% 		~~\includegraphics[height=4.7cm]{LV_CN_HIST}\\
+% 		\caption{Concentração de carbono no solo.}
+% 		\label{fig7differentGraphs1}
+% 	\end{center}
+% \end{figure}
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(LV-EN)\hspace{5cm} (LV-EC)\\
-		\includegraphics[height=4.7cm]{LV_EN_HIST}
-		~~\includegraphics[height=4.7cm]{LV_EC_HIST}\\
-		\caption{Concentração de carbono no solo.}
-		\label{fig7differentGraphs3}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(LV-EN)\hspace{5cm} (LV-EC)\\
+% 		\includegraphics[height=4.7cm]{LV_EN_HIST}
+% 		~~\includegraphics[height=4.7cm]{LV_EC_HIST}\\
+% 		\caption{Concentração de carbono no solo.}
+% 		\label{fig7differentGraphs3}
+% 	\end{center}
+% \end{figure}
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(LV-COD)\hspace{5cm} (LV-N)\\
-		\includegraphics[height=4.3cm]{LV_COD_HIST}
-		~~\includegraphics[height=4.3cm]{LV_N_HIST}\\
-		\caption{Concentração de carbono no solo.}
-		\label{fig7differentGraphs2}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(LV-COD)\hspace{5cm} (LV-N)\\
+% 		\includegraphics[height=4.3cm]{LV_COD_HIST}
+% 		~~\includegraphics[height=4.3cm]{LV_N_HIST}\\
+% 		\caption{Concentração de carbono no solo.}
+% 		\label{fig7differentGraphs2}
+% 	\end{center}
+% \end{figure}
 
 \section{Análise Exploratória}
 \label{cap5:secAnaliseExpliratoria}
 
 Considerando os valores para cada tipo de controle em razão da época, verificou-se que conjunto \textbf{LC-V}, conforme a figura \ref{cap3:figLVC}, sugerem alterações nos valores para variável resposta em razão do tempo, justificando uma avaliação do modelo para cada tipo de controle (tratamento) dentro de suas respectivas épocas;
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm]{BOX_LV_C}
-	\caption{Boxplot para o conjunto LV-C}
-	\label{cap3:figLVC}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm]{BOX_LV_C}
+% 	\caption{Boxplot para o conjunto LV-C}
+% 	\label{cap3:figLVC}
+% \end{figure} 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm]{BOX_LV_CN}
-	\caption{Boxplot para o conjunto LV-CN}
-	\label{cap3:figLVCN}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm]{BOX_LV_CN}
+% 	\caption{Boxplot para o conjunto LV-CN}
+% 	\label{cap3:figLVCN}
+% \end{figure} 
 
 Para o conjunto \textbf{LV-CN} o boxplot mostrado na figura \ref{cap3:figLVCN} exibe a presença de valores extremantes para alguns tratamentos no segundo e terceiro momento da observação. \textit{Outliers} também são observados nos conjuntos de dados \textbf{LV-COD} (figura \ref{cap3:figLVCOD}), \textbf{LV-EC} (figura \ref{cap3:figLVEC}) e \textbf{LV-EN} (figura \ref{cap3:figLVEN}). Importante ressaltar que, segundo \cite{barnett1994outliers}, o \textit{outlier} é uma observação (ou conjunto delas) que aparenta ser inconsistente com o restante do conjunto de dados, com crucial importância para caracterização da amostra, uma vez que, na ausência deles o modelo pode apresentar um comportamento diferente. Em todos os casos, a interpretação sugere que, ainda que mínima, o tempo exerce influência no comportamento da variável resposta, justificando uma análise em segundo nível.  
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm]{BOX_LV_COD}
-	\caption{Boxplot para o conjunto LV-COD}
-	\label{cap3:figLVCOD}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm]{BOX_LV_COD}
+% 	\caption{Boxplot para o conjunto LV-COD}
+% 	\label{cap3:figLVCOD}
+% \end{figure} 
 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm]{BOX_LV_EC}
-	\caption{Boxplot para o conjunto LV-EC}
-	\label{cap3:figLVEC}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm]{BOX_LV_EC}
+% 	\caption{Boxplot para o conjunto LV-EC}
+% 	\label{cap3:figLVEC}
+% \end{figure} 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm]{BOX_LV_EN}
-	\caption{Boxplot para o conjunto LV-EN}
-	\label{cap3:figLVEN}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm]{BOX_LV_EN}
+% 	\caption{Boxplot para o conjunto LV-EN}
+% 	\label{cap3:figLVEN}
+% \end{figure}
 
 Assim como o conjunto \textbf{LV-C}, o \textbf{LV-N} mostrou relativo controle entre os valores da variável resposta, sem a presença de pontos extremos e tendência que sugerem variação no valor para os tipos de controle em razão do tempo, de modo a valer uma análise mais aprofundada da interação entre as variáveis.
  
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=13cm]{BOX_LV_N}
-	\caption{Boxplot para o conjunto LV-N}
-	\label{cap3:figLVN}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=13cm]{BOX_LV_N}
+% 	\caption{Boxplot para o conjunto LV-N}
+% 	\label{cap3:figLVN}
+% \end{figure} 
 
 \section{Tratamento de saída da biblioteca GAMLSS}
 \label{cap3:secTratamentoSaidaGamlss}
@@ -1165,23 +1167,23 @@ Durante análise do modelo OLLST, incorporado a família de distribuições do G
 Supondo que se pretende ajustar um modelo de regressão para dados com medida repetida no tempo, cuja a estrutura da tabela seja semelhante ao mostrado na tabela \ref{tab1cap2disposicao}. 
 Ao se descrever computacionalmente o modelo da equação \ref{eqnEfeitosAleatorios12}, perceber-se que cada comparação entre indivíduos/tratamentos fica subordinada a variável \textbf{tempo} \textit{(Vide a figura \ref{fig24cap21})}.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=15cm]{tempo vs tratamentos}
-	\caption{Representação do modelo em função do tempo}
-	\label{fig24cap21}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=15cm]{tempo vs tratamentos}
+% 	\caption{Representação do modelo em função do tempo}
+% 	\label{fig24cap21}
+% \end{figure}
 
 Outro fator que deve ser considerado neste cenário está relacionado a indicação daquilo que deve ser comparado. Em uma estrutura com $k$ indivíduos/tratamentos, cada qual deve passar pela mesma rotina de comparação, ou seja, o dispositivo apresentado na figura \ref{fig24cap21} será repetido em $\sum_{i=1}^{k}$, e cada interação terá sua própria saída de dados. 
 
 Na postulação do modelo hierárquico a identificação do indivíduo/tratamento em restrição, ou seja, aquele que deverá ser comparado com os demais para cada lâmina do tempo, não fica evidenciado na saída dos resultados. Nesta ocasião, o pesquisador deve inferir qual indivíduo/tratamento está em restrição, como mostra a figura \ref{fig24cap22}, para somente então poder vislumbrar o panorama comparativo completo. 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=16cm]{saida}
-	\caption{Saída do ajuste para determinado tratamento}
-	\label{fig24cap22}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=16cm]{saida}
+% 	\caption{Saída do ajuste para determinado tratamento}
+% 	\label{fig24cap22}
+% \end{figure} 
 
 Ademais, a indicação manual para cada restrição pode trazer uma camada extra de dificuldade para o pesquisador, caso o conjunto de dados tenha muitos tratamentos. Consequentemente, a automação desta rotina representaria uma significativa economia de tempo, além de minimizar a possibilidade de erros. 
 
@@ -1234,15 +1236,15 @@ Ao final, foi discorrido sobre uma proposta de lapidação para saída de dados 
 
 Para o conjunto de dados \textbf{LV-C}, cujo o gráfico de frequência é apresentado na figura \ref{fig7differentGraphs1}(LV-C), utilizando a função \texttt{histDist} é possível visualizar uma perspectiva de concentração para zona de densidade de probabilidade nas famílias de distribuição Normal e OLLST, como mostra a figura \ref{fig7differentGraphs8}. Através da saída para esta função, apresentada aqui na tabela \ref{tab8cap5histDist} é possível inferir, preliminarmente, um melhor desempenho da distribuição OLLST em detrimento a NO para esse conjunto de dados.
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=4.7cm]{histdistno}
-		~~\includegraphics[height=4.7cm]{histdistollst}\\
-		\caption{Conjunto de dados LV-C}
-		\label{fig7differentGraphs8}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=4.7cm]{histdistno}
+% 		~~\includegraphics[height=4.7cm]{histdistollst}\\
+% 		\caption{Conjunto de dados LV-C}
+% 		\label{fig7differentGraphs8}
+% 	\end{center}
+% \end{figure}
 
 \begin{table}[h]
 	\begin{center}
@@ -1308,29 +1310,29 @@ Submetido ao ajuste pelo modelo OLLST, o conjunto de dados \textbf{LV-C} teve co
 
 Na avaliação do comportamento do modelo OLLST em comparação ao NO, através do gráfico de probabilidade mostrados na figura \ref{fig7differentGraphs15} é possível concluir para esse conjunto de dados que o modelo OLLST saiu-se melhor no ajunte, com 25\% dos pontos fora da banda enquanto o NO teve 29,17\%.
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=4.5cm]{resido_NO}
-		~~\includegraphics[height=4.5cm]{residos_OLLST}\\
-		\caption{Conjunto de dados LV-C}
-		\label{fig7differentGraphs15}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=4.5cm]{resido_NO}
+% 		~~\includegraphics[height=4.5cm]{residos_OLLST}\\
+% 		\caption{Conjunto de dados LV-C}
+% 		\label{fig7differentGraphs15}
+% 	\end{center}
+% \end{figure}
 
 Ainda que o OLLST tenha se saído melhor na comparação acima, esta afirmação restringe-se ao contexto do conjunto de dados LV-C. Por tanto, uma nova análise foi realizada desta vez com o conjunto \textbf{LV-CN}, mostrado na figura \ref{fig7differentGraphs1}(LV-CN) seu gráfico de frequência. 
 
 Novamente as informações sobre o conjunto obtidas através da função \texttt{histDist} (veja a figura \ref{fig7differentGraphs16}) levam a crer que a distribuição OLLST encaixa-se melhor a zona de densidade de probabilidade da população, informações que corroboram com a saída de dado mostradas na tabela \ref{tab8cap5histDist1}. No entanto, o gráfico de probabilidade para o conjunto mostra um ajuste mais preciso para distribuição NO, com zero pontos fora das bandas do envelope simulado. 
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=4.5cm]{LV_CN_HIST_NO}
-		~~\includegraphics[height=4.5cm]{LV_CN_HIST_OLLSTT}\\
-		\caption{HistDist para conjunto LV-CN}
-		\label{fig7differentGraphs16}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=4.5cm]{LV_CN_HIST_NO}
+% 		~~\includegraphics[height=4.5cm]{LV_CN_HIST_OLLSTT}\\
+% 		\caption{HistDist para conjunto LV-CN}
+% 		\label{fig7differentGraphs16}
+% 	\end{center}
+% \end{figure}
 
 \begin{table}[h]
 	\begin{center}
@@ -1351,15 +1353,15 @@ Novamente as informações sobre o conjunto obtidas através da função \texttt
 	\end{center}
 \end{table}
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=4.5cm]{LV_CN_ENV_NO}
-		~~\includegraphics[height=4.5cm]{LV_CN_ENV_OLLST}\\
-		\caption{Envelope simulado para o conjunto LV-CN}
-		\label{fig7differentGraphs14}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=4.5cm]{LV_CN_ENV_NO}
+% 		~~\includegraphics[height=4.5cm]{LV_CN_ENV_OLLST}\\
+% 		\caption{Envelope simulado para o conjunto LV-CN}
+% 		\label{fig7differentGraphs14}
+% 	\end{center}
+% \end{figure}
 
 
 Deferente dos demais conjuntos, onde os tempos de observação foram somente três, para o conjunto \textbf{LV-COD} as amostras foram observadas em onze momentos diferentes. Considerando que estes dados avaliam a dissolução do carbono no solo, o gráfico \ref{fig7differentGraphs2}(LV-COD) mostra um comportamento em decréscimo dos valores para variável resposta com uma zona de concentração assimétrica. 
@@ -1367,15 +1369,15 @@ Deferente dos demais conjuntos, onde os tempos de observação foram somente tr�
 Nesse conjunto, a área sob a curva para distribuição normal (veja a figura \ref{fig7differentGraphs17}(NO)), mesmo tendendo para zona de densidade de probabilidade da população, não conseguiu abranger uma maior parcela, enquanto a OLLST (veja a figura \ref{fig7differentGraphs17}(OLLST)) elevou sua moda mais próxima ao pico da zona. Como resultado, cada distribuição apresentou valores mostrados na tabela \ref{tab8cap5histDist4}.
 
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=4.2cm]{LV_COD_NO_HISTDIST}
-		~~\includegraphics[height=4.2cm]{LV_COD_OLLST_HISTDIST}\\
-		\caption{HistDist para o conjunto LV-COD}
-		\label{fig7differentGraphs17}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=4.2cm]{LV_COD_NO_HISTDIST}
+% 		~~\includegraphics[height=4.2cm]{LV_COD_OLLST_HISTDIST}\\
+% 		\caption{HistDist para o conjunto LV-COD}
+% 		\label{fig7differentGraphs17}
+% 	\end{center}
+% \end{figure}
 
 \begin{table}[h]
 	\begin{center}
@@ -1399,28 +1401,28 @@ Nesse conjunto, a área sob a curva para distribuição normal (veja a figura \r
 O indicativo de melhora na performance do OLLST em relação ao NO na análise acima foi contatado no gráfico de probabilidade como mostra a figura \ref{fig7differentGraphs10}. No entanto, ambos os modelos apresentaram um desempenho aquém com mais da metade dos pontos fora dos limites do envelope simulado. Dos 176 pontos, 134 escaparam do intervalo das bandas para o modelo NO, enquanto OLLST foram 104. 
 
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=4.2cm]{envelope_lv_cod_no}
-		~~\includegraphics[height=4.2cm]{envelope_lv_cod_ollst}\\
-		\caption{Envelope simulado para o conjunto LV-COD}
-		\label{fig7differentGraphs10}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=4.2cm]{envelope_lv_cod_no}
+% 		~~\includegraphics[height=4.2cm]{envelope_lv_cod_ollst}\\
+% 		\caption{Envelope simulado para o conjunto LV-COD}
+% 		\label{fig7differentGraphs10}
+% 	\end{center}
+% \end{figure}
 
 
 Na análise do conjunto de dados \textbf{LV-EN}, cujo o histograma é dado pela figura \ref{fig7differentGraphs3}(LV-EN), apesar de uma tendência da moda para região de pico da gráfico na análise OLLST (veja a figura \ref{fig7differentGraphs11}(OLLST)), ao ajustar o modelo de regressão hierárquico verificou-se que o Normal saiu-se melhor, apresentando um ajuste mais assertivo, como mostra a figura \ref{fig7differentGraphs12}(NO) e \ref{fig7differentGraphs12}(OLLST). Este comportamento pode ser reflexo da variação abrupta nos valores para variável resposta de uma população pequena, já que esse conjunto é uma parcela do estudo geral proposto por \cite{gabriel2022} para analisar o teor de carbono no solo em função do tempo de uma única profundidade. 
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=4.5cm]{LV_EN_HISTDIST_NO}
-		~~\includegraphics[height=4.5cm]{LV_EN_HISTDIST_OLLST}\\
-		\caption{HistDist para o conjunto LV-EN}
-		\label{fig7differentGraphs20}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=4.5cm]{LV_EN_HISTDIST_NO}
+% 		~~\includegraphics[height=4.5cm]{LV_EN_HISTDIST_OLLST}\\
+% 		\caption{HistDist para o conjunto LV-EN}
+% 		\label{fig7differentGraphs20}
+% 	\end{center}
+% \end{figure}
 
 \begin{table}[h]
 	\begin{center}
@@ -1441,26 +1443,28 @@ Na análise do conjunto de dados \textbf{LV-EN}, cujo o histograma é dado pela 
 	\end{center}
 \end{table}
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=5.5cm]{envelope_lv_en_no}
-		~~\includegraphics[height=5.5cm]{envelope_lv_en_ollst}\\
-		\caption{Envelope simulado para o conjunto LV-EN}
-		\label{fig7differentGraphs12}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=5.5cm]{envelope_lv_en_no}
+% 		~~\includegraphics[height=5.5cm]{envelope_lv_en_ollst}\\
+% 		\caption{Envelope simulado para o conjunto LV-EN}
+% 		\label{fig7differentGraphs12}
+% 	\end{center}
+% \end{figure}
 
 Comportamento semelhante ao observado no ajuste para os dados \textbf{LV-EN} ocorreu com \textbf{LV-EC}. A figura \ref{fig7differentGraphs3}(LV-EC) mostra a mesma tendência dos dados, em uma proporção menor, onde há uma varição acentuada nos valores dos níveis de carbono em um conjunto com apenas quatro tratamentos, três tempos e quatro repetições. Como resultado, novamente o modelo NO ajusta-se melhor o comportamento dos dados como mostra o gráfico \ref{fig7differentGraphs11}(NO) e \ref{fig7differentGraphs11}(OLLST), onde 46 dos 48 pontos permaneceram dentro de intervalo das bandas para o modelo NO, ao passo que no OLLST esse número subiu para 27.
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=5.5cm]{envelope_lv_ec_no}
-		~~\includegraphics[height=5.5cm]{envelope_lv_ec_ollst}\\
-		\caption{Conjunto de dados LV-EC}
-		\label{fig7differentGraphs11}
-	\end{center}
-\end{figure}
+
+
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=5.5cm]{envelope_lv_ec_no}
+% 		~~\includegraphics[height=5.5cm]{envelope_lv_ec_ollst}\\
+% 		\caption{Conjunto de dados LV-EC}
+% 		\label{fig7differentGraphs11}
+% 	\end{center}
+% \end{figure}
 
 Finalmente, a mesma sequência de experimentos foi executada para o conjunto de dado \textbf{LV-N}. Conforme visto na figura \ref{fig7differentGraphs2}(LV-N), o conjunto parece apresentar uma espécie de bimodalidade, onde picos das modas não apresentam uma acentuada disparidade nos valores para variável resposta. Como resultado dos testes o modelo OLLST saiu-se melhor quando comparado ao modelo NO, como mostra a saída para função \texttt{summary} para ambos os modelos, assim como seus respectivos gráficos de probabilidade (veja a figura \ref{fig7differentGraphs13}). No envelope simulado, apenas 7,64\% dos 144 pontos não ajustaram-se bem pelo modelo OLLST, enquanto para o NO essa porcentagem chegou 52,08\% do total.
 
@@ -1484,15 +1488,15 @@ Finalmente, a mesma sequência de experimentos foi executada para o conjunto de 
 	\end{center}
 \end{table} 
 
-\begin{figure}[!htb]
-	\begin{center}
-		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
-		\includegraphics[height=5.5cm]{envelope_lv_n_no}
-		~~\includegraphics[height=5.5cm]{envelope_lv_n_ollst}\\
-		\caption{Envelope simulado para o conjunto LV-N}
-		\label{fig7differentGraphs13}
-	\end{center}
-\end{figure}
+% \begin{figure}[!htb]
+% 	\begin{center}
+% 		\hspace{0.2cm}(NO)\hspace{5cm} (OLLST)\\
+% 		\includegraphics[height=5.5cm]{envelope_lv_n_no}
+% 		~~\includegraphics[height=5.5cm]{envelope_lv_n_ollst}\\
+% 		\caption{Envelope simulado para o conjunto LV-N}
+% 		\label{fig7differentGraphs13}
+% 	\end{center}
+% \end{figure}
 
 
 
@@ -1512,26 +1516,26 @@ Como parte da melhoria proposta, uma interface web de manipulação foi criada p
 
 Utilizando a linguagem de programação \texttt{Python} e o framework Flask, entre outras bibliotecas, além de \texttt{shell script}, foi possível receber do usuário o conjunto de dados, a identificação das colunas (variável resposta, tempo e indivíduo/tratamento) e a distribuição escolhida para o ajuste do modelo, retornando um arquivo \texttt{.zip} com todas as análises para cada restrição em função do tempo \textit{(Vide as figuras \ref{fig24cap23}, \ref{fig24cap24} e \ref{fig24cap25})}. 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=17cm]{tela1}
-	\caption{Interface gráfica - Janela 01}
-	\label{fig24cap23}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=17cm]{tela1}
+% 	\caption{Interface gráfica - Janela 01}
+% 	\label{fig24cap23}
+% \end{figure} 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=15cm]{tela2}
-	\caption{Interface gráfica - Janela 02}
-	\label{fig24cap24}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=15cm]{tela2}
+% 	\caption{Interface gráfica - Janela 02}
+% 	\label{fig24cap24}
+% \end{figure} 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=15cm]{tela3}
-	\caption{Interface gráfica - Janela 03}
-	\label{fig24cap25}
-\end{figure} 
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=15cm]{tela3}
+% 	\caption{Interface gráfica - Janela 03}
+% 	\label{fig24cap25}
+% \end{figure} 
 
 \subsection{Resultados alcançados}
 \label{cap3:secResultadosAlcancados}
